@@ -1,0 +1,17 @@
+{
+    'regressor_layers': 1,
+    'encoder_layers': 2,
+    'num_train_steps': 700,
+    'encoder_units': 1,
+    'learning_rate': 0.0007,
+    'batch_size': 128,
+    'regressor_units': 16,
+    'classifier_layers': 2,
+    'reg_type': 'all',
+    'regularizor': 'l2',
+    'classifier_units': 16,
+    'gradient_clip': 5.0,
+    'lambda': 0.05,
+    }
+
+		

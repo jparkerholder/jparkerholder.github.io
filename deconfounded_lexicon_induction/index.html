@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>Deconfounded Lexicon Induction</title>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107224691-1"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments)};
+       gtag('js', new Date());
+
+       gtag('config', 'UA-107224691-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <script type="text/javascript" src="https://use.fontawesome.com/981e0eb420.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+
+    <link rel="shortcut icon" href="../img/favicon.ico" >
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 style="text-align: center">
+                    Deconfounded Lexicon Indution </br>
+                    for Interpretable Social Science
+                </h1>
+                <h5 style="text-align: center">
+                    Project website
+                </h5>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-3"><h5>About</h5></div>
+            <div class="col-sm-9">
+                <a href=""> You can read the paper here</a>.
+
+                </br>
+                </br>
+
+                We present two new algorithms (Adversarial Selection (A) and Deep Residualization (DR)) for selecting text features which are predictive of some outcomes, but decorrelated from others. This activity can help you make causal inferences from text. It can also help make NLP models interpretable.
+
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Code</h5></div>
+            <div class="col-sm-9">
+
+            The Adversarial Selection and Deep Residualization algorithms are implemented in TensorFlow. 
+
+                </br>
+                </br>
+
+            Code and implementation details can be found on <a href="https://github.com/rpryzant/deconfounded_lexicon_induction/" target="_blank" rel="nofollow">Github</a>.
+
+
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Hyperparameters</h5></div>
+            <div class="col-sm-9">
+                Following are hyperparameter settings for each of the experiments presented in the paper. These files can be copy-pasted into the corresponding "model" section of a JSON configuration file like the <a href="https://github.com/rpryzant/deconfounded_lexicon_induction/blob/master/sample_config.yaml">sample given in Github</a>.
+
+                </br>
+                </br>
+
+
+                <b> Section 4.1: Consumer Financial Protection Bureau(CFPB) Complaints </b>
+                <ul style="margin: 0 0 3px 0">
+                    <li> <a href="configs/cfpb/a_attn.txt" target="_blank" rel="nofollow">A+ATTN</a>
+                    <li> <a href="configs/cfpb/a_bow.txt" target="_blank" rel="nofollow">A+BOW</a>
+                    <li> <a href="configs/cfpb/dr_attn.txt" target="_blank" rel="nofollow">DR+ATTN</a>
+                    <li> <a href="configs/cfpb/dr_bow.txt" target="_blank" rel="nofollow">DR+BOW</a>
+                </ul>
+
+                <b> Section 4.2: University Course Descriptions </b>
+                <ul style="margin: 0 0 3px 0">
+                    <li> <a href="configs/courses/a_attn.txt" target="_blank" rel="nofollow">A+ATTN</a>
+                    <li> <a href="configs/courses/a_bow.txt" target="_blank" rel="nofollow">A+BOW</a>
+                    <li> <a href="configs/courses/dr_attn.txt" target="_blank" rel="nofollow">DR+ATTN</a>
+                    <li> <a href="configs/courses/dr_bow.txt" target="_blank" rel="nofollow">DR+BOW</a>
+                </ul>
+
+                <b> Section 4.3: eCommerce Descriptions</b>
+                <ul style="margin: 0 0 3px 0">
+                    <li> <a href="configs/rakuten/a_attn.txt" target="_blank" rel="nofollow">A+ATTN</a>
+                    <li> <a href="configs/rakuten/a_bow.txt" target="_blank" rel="nofollow">A+BOW</a>
+                    <li> <a href="configs/rakuten/dr_attn.txt" target="_blank" rel="nofollow">DR+ATTN</a>
+                    <li> <a href="configs/rakuten/dr_bow.txt" target="_blank" rel="nofollow">DR+BOW</a>
+                </ul>
+
+
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Contributors</h5></div>
+            <div class="col-sm-9">
+                <ul style="margin: 0 0 3px 0">
+                    <li> <a href="https://cs.stanford.edu/~rpryzant/" target="_blank" rel="nofollow">Reid Pryzant</a> <i>(primary contact)</i>
+        	    <li> <a href="https://www.linkedin.com/in/kellyshen621" target="_blank" rel="nofollow">Kelly Shen</a>
+                    <li> <a href="https://web.stanford.edu/~jurafsky/" target="_blank" rel="nofollow">Dan Jurafsky</a>
+                    <li> <a href="https://web.stanford.edu/~swager/" target="_blank" rel="nofollow">Stefan Wagner</a>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Cite</h5></div>
+            <div class="col-sm-9">
+                <pre>
+TODO -- arXiv bibtex
+                </pre>
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+    </div>
+</br></br>
+</body>
+
+</html>

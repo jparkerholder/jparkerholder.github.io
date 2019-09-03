@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>JESC</title>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107224691-1"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments)};
+       gtag('js', new Date());
+
+       gtag('config', 'UA-107224691-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <script type="text/javascript" src="https://use.fontawesome.com/981e0eb420.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./static/style.css" />
+
+    <link rel="shortcut icon" href="../img/favicon.ico" >
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+    	      <img src="img/flags.png" alt="flags" class="headshot">
+              <img src="img/logos.jpg" alt="Reid Pryzant" class="headshot-right">
+
+                    <h1>JESC</h1>
+                        <h5 style="text-align: center"> Japanese-English Subtitle Corpus</h5>
+
+                        <small style="position: absolute; width: 97%; text-align: center">
+                            <a href="index.html">English</a> <span class="sep">|</span>
+                            <span style="display: inline-block; white-space: nowrap;">
+                                <a href="index_ja.html">日本語</a> <span class="sep">
+                            </span>
+                        </small>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-3"><h5>About</h5></div>
+            <div class="col-sm-9">
+                JESC aims to support the research and development of machine translation systems, information extraction, and other language processing techniques. It consists of 3.2M parallel sentences.
+
+                </br></br>
+
+                JESC is the product of a collaboration between Stanford University, Google Brain, and Rakuten Institute of Technology. It was created by crawling the internet for movie and tv subtitles and aligining their captions. It is one of the largest freely available EN-JA corpus, and covers the poorly represented domain of colloquial language.  
+
+                </br></br>
+
+                You can download the scripts, tools, and crawlers used to create this dataset on <a href="https://github.com/rpryzant/JESC" target="_blank" rel="nofollow">Github</a>.
+
+                </br></br>
+
+                <a href="https://arxiv.org/abs/1710.10639" target="_blank" rel="nofollow">You can read the paper here</a>.
+
+                </br></br>
+
+                These data are released under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="nofollow">Creative Commons (CC) license</a>.
+
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Contents</h5></div>
+            <div class="col-sm-9">
+                <ul style="margin: 0 0 3px 0">
+                    <li> A large corpus consisting of over 3.2 million sentences.
+                    <li> Translations of casual language, colloquialisms, expository writing, and narrative discourse. These are domains that are hard to find in JA-EN MT. 
+                    <li> Pre-processed data, including tokenized train/dev/test splits.
+                    <li> Code for making your own crawled datasets and tools for manipulating MT data.
+                </ul>
+
+                </br></br>
+
+               <table class="tg">
+                  <tr>
+                    <th class="tg-031e"><b>Split</b></th>
+                    <th class="tg-031e"><b>Phrase Pairs</b></th>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Raw</td>
+                    <td class="tg-031e">3,243,887</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Train</td>
+                    <td class="tg-031e">3,239,888</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Dev</td>
+                    <td class="tg-031e">2000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">Test</td>
+                    <td class="tg-031e">3001</td>
+                  </tr>
+                </table>   
+
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Download</h5></div>
+            <div class="col-sm-9">
+                <ul style="margin: 0 0 3px 0">
+                    <li> <a href="https://goo.gl/gyqETx" target="_blank" rel="nofollow">Raw corpus</a>
+        	    <li> <a href="https://goo.gl/idaoxo" target="_blank" rel="nofollow">Official splits</a>
+                    <li> <a href="https://goo.gl/L8XFeQ" target="_blank" rel="nofollow">Tokenized splits</a>
+                    <li> <a href="https://goo.gl/bbKwHV" target="_blank" rel="nofollow">Code</a>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Cite</h5></div>
+            <div class="col-sm-9">
+                <pre>
+@ARTICLE{pryzant_jesc_2017,
+   author = {{Pryzant}, R. and {Chung}, Y. and {Jurafsky}, D. and {Britz}, D.},
+    title = "{JESC: Japanese-English Subtitle Corpus}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1710.10639},
+ keywords = {Computer Science - Computation and Language},
+     year = 2017,
+    month = oct,
+}                
+                </pre>
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+        <div class="footer">
+            <a href="index.html">English</a> <span class="sep">|</span>
+            <a href="index_ja.html">日本語</a>
+        </div>
+    </div>
+</br></br>
+</body>
+
+</html>

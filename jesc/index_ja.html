@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+   <title>JESC</title>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107224691-1"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments)};
+       gtag('js', new Date());
+
+       gtag('config', 'UA-107224691-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <script type="text/javascript" src="https://use.fontawesome.com/981e0eb420.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./static/style.css" />
+
+    <link rel="shortcut icon" href="../img/favicon.ico" >
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+    	      <img src="img/flags.png" alt="flags" class="headshot">
+              <img src="img/logos.jpg" alt="Reid Pryzant" class="headshot-right">
+
+                    <h1>JESC</h1>
+                        <h5 style="text-align: center"> Japanese-English Subtitle Corpus</h5>
+
+                        <small style="position: absolute; width: 97%; text-align: center">
+                            <a href="index.html">English</a> <span class="sep">|</span>
+                            <span style="display: inline-block; white-space: nowrap;">
+                                <a href="index_ja.html">日本語</a> <span class="sep">
+                            </span>
+                        </small>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-3"><h5>About</h5></div>
+            <div class="col-sm-9">
+                JESCは、機械翻訳、情報抽出及びその他の言語処理技術の研究開発をサポートするために構築されました。JESCは、320万の日英対訳文から構成されています。
+
+                </br></br>
+
+		JESCは、スタンフォード大学、グーグルブレイン、RITの共同研究開発による成果であり 、インターネット上からクロールされた映画とTV番組の字幕データを日英対応させることで構築されています。JESCは、自由に利用できる日英対訳コーパスの中で最大規模のコーパスであり、既存のコーパスではあまり扱われてこなかった口語の対訳も対象しています。
+		</br></br>
+		このデータセットを作るために使われたスクリプト、ツール、及びクローラーは、<a href="https://github.com/rpryzant/JESC" target="_blank" rel="nofollow">ここ</a>からダウンロードすることができます。 
+
+		</br></br>
+
+		このデータは<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="nofollow">クリエイティブ・コモンズ (CC)</a> ライセンスの下で提供されています。
+
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-3"><h5>Contents</h5></div>
+            <div class="col-sm-9">
+                <ul style="margin: 0 0 3px 0">
+                    <li> 320万文以上から構成される大規模対訳コーパス。
+                    <li> 俗語、口語、説明文、物語解説の対訳。これらは既存のコーパスではあまり扱われてこなかった分野です。
+                    <li> 前処理済みの、トークン化された訓練/開発/評価データ。
+                    <li> 自作クローラの作成用のコードと、MTデータを処理するためのツール。
+                </ul>
+
+                </br></br>
+
+               <table class="tg">　
+                  <tr>
+                    <th class="tg-031e"><b>内容</b></th>
+                    <th class="tg-031e"><b>対訳文</b></th>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">全データ</td>
+                    <td class="tg-031e">3,243,887</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">訓練データ</td>
+                    <td class="tg-031e">3,239,888</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">開発データ</td>
+                    <td class="tg-031e">2000</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-031e">評価データ</td>
+                    <td class="tg-031e">3001</td>
+                  </tr>
+                </table>   
+
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>Download</h5></div>
+            <div class="col-sm-9">
+                <ul style="margin: 0 0 3px 0">
+                    <li> <a href="https://goo.gl/gyqETx" target="_blank" rel="nofollow">オリジナルデータ</a>
+        	    <li> <a href="https://goo.gl/idaoxo" target="_blank" rel="nofollow">分割データ</a>
+                    <li> <a href="https://goo.gl/L8XFeQ" target="_blank" rel="nofollow">トークン化されたデータ</a>
+                    <li> <a href="https://goo.gl/bbKwHV" target="_blank" rel="nofollow">コード</a>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+
+
+
+        <div class="row">
+            <div class="col-sm-3"><h5>引用</h5></div>
+            <div class="col-sm-9">
+                <pre>
+@ARTICLE{pryzant_jesc_2017,
+   author = {{Pryzant}, R. and {Chung}, Y. and {Jurafsky}, D. and {Britz}, D.},
+    title = "{JESC: Japanese-English Subtitle Corpus}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1710.10639},
+ keywords = {Computer Science - Computation and Language},
+     year = 2017,
+    month = oct,
+}                
+                </pre>
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+        <div class="footer">
+            <a href="index.html">English</a> <span class="sep">|</span>
+            <a href="index_ja.html">日本語</a>
+        </div>
+    </div>
+</br></br>
+</body>
+
+</html>

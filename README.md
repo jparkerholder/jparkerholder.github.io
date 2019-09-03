@@ -1,1 +1,1 @@
-# jparkerholder.github.io
+http://cs.stanford.edu/~rpryzant/

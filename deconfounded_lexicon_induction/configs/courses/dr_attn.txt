@@ -1,0 +1,20 @@
+{
+    'regressor_layers': 3,
+    'embedding_size': 150,
+    'num_train_steps': 5000,
+    'attn_layers': 2,
+    'attn_importance_strategy': 'average',
+    'encoder_units': 64,
+    'learning_rate': 0.001,
+    'encoder_layers': 1,
+    'batch_size': 128,
+    'regressor_units': 100,
+    'classifier_layers': 1,
+    'classifier_units': 64,
+    'gradient_clip': 5.0,
+    'dropout': 0.4,
+    'use_glove': True,
+    'attn_units': 128,
+    }
+
+		

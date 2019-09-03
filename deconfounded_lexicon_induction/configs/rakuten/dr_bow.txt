@@ -1,0 +1,20 @@
+{
+    'lambda': 0.1,
+    'num_train_steps': 4000,
+    'classification_layers_2': 1,
+    'classification_layers_1': 2,
+    'regression_hidden_1': 16,
+    'encoding_dim': 4,
+    'learning_rate': 0.03,
+    'batch_size': 128,
+    'classification_hidden_1': 16,
+    'reg_type': 'bow',
+    'classification_hidden_2': 8,
+    'regularizor': 'l2',
+    'regression_hidden_2': 1,
+    'encoder_layers': 1,
+    'regression_layers_2': 2,
+    'regression_layers_1': 2,
+    }
+
+		
