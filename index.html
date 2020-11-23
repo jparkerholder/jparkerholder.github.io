@@ -52,7 +52,7 @@
 I am a second year DPhil student at St Peter's College, Oxford, where I am part of the <a href="http://www.robots.ox.ac.uk/~parg/" target="_blank" rel="nofollow">Machine Learning Research Group</a>, advised by <a href="https://www.robots.ox.ac.uk/~sjrob/" target="_blank" rel="nofollow">Stephen Roberts</a>. 
 </br></br>
 
-I am interested in ways to make RL algorithms work "out of the box" by adapting their behavior on-the-fly. This can be through learning hyperparameters, exploration strategies, or even update rules. I am also focusing on ways to  train agents which can generalize beyond a single simulated environment, which is crucial if they will ever be useful in real-world settings such as robotics or electronic trading. 
+I am interested in ways to improve generalization in RL. This can be viewed from many different lenses: 1) At the <i>algorithm</i> level where I am interested in ways to make RL algorithms work "out of the box" by adapting their behavior on-the-fly. This can be through learning <a href="https://arxiv.org/abs/2002.02518" target="_blank" rel="nofollow">hyperparameters</a>, <a href="https://arxiv.org/abs/2002.02693" target="_blank" rel="nofollow">exploration strategies</a>, or even update rules. 2) At the <i>agent</i> level, where I am working on ways to train agents which can generalize beyond a single deterministic instantiation of an environment. My work so far has focused on producing a diverse set of policies (<a href="https://arxiv.org/abs/2002.00632" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2011.06505?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+arxiv%252FQSXk+%2528ExcitingAds%2521+cs+updates+on+arXiv.org%2529" target="_blank" rel="nofollow">here</a>), with the aim to improve robustness by dynamically selecting from these at test time. 3) Beyond a single environment. In an ideal world, agents can also quickly adapt to new tasks, potentially chaining together primitives (or options). They may also need to learn these tasks <a href="https://www.oxford-man.ox.ac.uk/wp-content/uploads/2020/11/UNCLEAR-A-Straightforward-Method-for-Continual-Reinforcement-Learning.pdf" target="_blank" rel="nofollow">continually</a>. 
 
 </br></br>
 Before coming to Oxford I was a VP in the Quantitative Research team at JPM in New York. While in America I studied for a Master's part-time at Columbia where I discovered the joys of machine learning research! I am originally from the UK, and studied Maths at Exeter. 
@@ -117,7 +117,7 @@ I am immensely privileged to have worked with some fantastic people, in alphabet
                                 <b> Jack Parker-Holder*</b>, Aldo Pacchiano*, Krzysztof Choromanski, Stephen Roberts </br> 
                                 <i>Advances in Neural Information Processing Systems (NeurIPS), 2020 </i> <font color=#189441><strong>(Spotlight)</strong></font> </br> 
                                 <i> The Fourth Lifelong Machine Learning Workshop at ICML, 2020 </i> </br>
-                                (<a href="https://arxiv.org/abs/2002.00632" target="_blank" rel="nofollow">ArXiv</a>)
+                                (<a href="https://arxiv.org/abs/2002.00632" target="_blank" rel="nofollow">ArXiv</a>)(<a href="https://www.youtube.com/watch?v=2k26xxPw3CA" target="_blank" rel="nofollow">Talk</a>) (<a href="https://github.com/jparkerholder/DvD_ES" target="_blank" rel="nofollow">Code</a>)
                             </div>
                         </td>
                     </tr>
@@ -138,7 +138,7 @@ I am immensely privileged to have worked with some fantastic people, in alphabet
                                 <b> Jack Parker-Holder</b>, Vu Nguyen, Stephen Roberts </br>                                 
                                 <i>Advances in Neural Information Processing Systems (NeurIPS), 2020 </i>  </br> 
                                 <i>The 7th ICML Workshop on Automated Machine Learning (AutoML), 2020  </i> <font color=#189441><strong>(Contributed Talk)</strong></font> </br>
-                                (<a href="https://www.automl.org/wp-content/uploads/2020/07/AutoML_2020_paper_26.pdf" target="_blank" rel="nofollow">Paper</a>) (<a href="https://github.com/jparkerholder/PB2" target="_blank" rel="nofollow">Code</a>)
+                                (<a href="https://arxiv.org/abs/2002.02518" target="_blank" rel="nofollow">ArXiv</a>)(<a href="https://www.anyscale.com/blog/population-based-bandits" target="_blank" rel="nofollow">Blog</a>)(<a href="https://github.com/jparkerholder/PB2" target="_blank" rel="nofollow">Code</a>)
                             </div>
                         </td>
                     </tr>
@@ -155,10 +155,11 @@ I am immensely privileged to have worked with some fantastic people, in alphabet
                         </td>
                         <td>
                             <div class="large-12 columns", style="margin: 20px">
-                                <b>Ridge Riding: Finding diverse solutions by following eigenvectors of the Hessian </b>  </br> 
-                                <b>Jack Parker-Holder*</b>, Cinjon Resnick, Luke Metz, Hengyuan Hu, Adam Lerer, Alistair HP Letcher, Alex Peysakhovich, Aldo Pacchiano, Jakob Foerster* </br>                                 
+                                <b>Ridge Rider: Finding diverse solutions by following eigenvectors of the Hessian </b>  </br> 
+                                <b>Jack Parker-Holder*</b>, Luke Metz, Cinjon Resnick, Hengyuan Hu, Adam Lerer, Alistair HP Letcher, Alex Peysakhovich, Aldo Pacchiano, Jakob Foerster* </br>                                 
                                 <i>Advances in Neural Information Processing Systems (NeurIPS), 2020 </i>  </br> 
-                                <i>Beyond First Order Methods in ML Systems, ICML, 2020 </i> <font color=#189441><strong>(Spotlight)</strong></font>
+                                <i>Beyond First Order Methods in ML Systems, ICML, 2020 </i> <font color=#189441><strong>(Spotlight)</strong></font> </br>
+                                (<a href="https://arxiv.org/abs/2011.06505?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+arxiv%252FQSXk+%2528ExcitingAds%2521+cs+updates+on+arXiv.org%2529" target="_blank" rel="nofollow">Arxiv</a>) (<a href="https://bair.berkeley.edu/blog/2020/11/13/ridge-rider/" target="_blank" rel="nofollow">Blog</a>)
                             </div>
                         </td>
                     </tr>
@@ -380,7 +381,7 @@ I am immensely privileged to have worked with some fantastic people, in alphabet
                         </td>
                         <td>
                             <div class="large-12 columns", style="margin: 20px">
-                                <b>On Optimism in Model-Based Reinforcement Learning </b>  </br> 
+                                <b>Towards Tractable Optimism in Model-Based Reinforcement Learning </b>  </br> 
                                 Aldo Pacchiano*, Philip Ball*, <b> Jack Parker-Holder*</b>, Krzysztof Choromanski, Stephen Roberts </br> 
                                 (<a href="https://arxiv.org/abs/2006.11911" target="_blank" rel="nofollow">ArXiv</a>)
                             </div>
