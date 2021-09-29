@@ -49,13 +49,13 @@
         <div class="row">
             <div class="col-sm-2"><h5>About</h5></div>
             <div class="col-sm-10">
-I am a second year DPhil student at St Peter's College, Oxford, where I am part of the <a href="http://www.robots.ox.ac.uk/~parg/" target="_blank" rel="nofollow">Machine Learning Research Group</a>, advised by <a href="https://www.robots.ox.ac.uk/~sjrob/" target="_blank" rel="nofollow">Stephen Roberts</a>. I am currently interning at Facebook AI Research with Tim Rocktäschel and Ed Grefenstette.
+I am a third year DPhil student at St Peter's College, Oxford, where I am part of the <a href="http://www.robots.ox.ac.uk/~parg/" target="_blank" rel="nofollow">Machine Learning Research Group</a>, advised by <a href="https://www.robots.ox.ac.uk/~sjrob/" target="_blank" rel="nofollow">Stephen Roberts</a>.
 </br></br>
 
-I am interested in making reinforcement learning (RL) work in real world settings, which I am tackling in three different ways: (1) Automating RL algorithms so they work for arbitrary problems without excessive tuning. This can be through learning <a href="https://arxiv.org/abs/2002.02518" target="_blank" rel="nofollow">hyperparameters</a>, <a href="https://arxiv.org/abs/2002.02693" target="_blank" rel="nofollow">exploration strategies</a>, or even update rules. (2) Improving generalization, to make agents less brittle to changes in the environment, for example by learning diverse solutions (<a href="https://arxiv.org/abs/2002.00632" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2011.06505?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+arxiv%252FQSXk+%2528ExcitingAds%2521+cs+updates+on+arXiv.org%2529" target="_blank" rel="nofollow">here</a>), and finally (3) Making use of offline data. In a variety of settings we have access to rich datasets but cannot collect new experience, if we can find ways to <a href="https://arxiv.org/abs/2104.05632" target="_blank" rel="nofollow">train robust policies in this paradigm</a> then we can open the door to some exciting applications of RL in the real world.
+I am interested in ways use reinforcement learning (RL) to train generally capable agents that can be effective in the real world. I think the ultimate solution to this will require innovations in a wide range of areas, so I am working on a variety of different threads: (1) AutoRL: We want RL algorithms to not only work "out of the box" but also automatically discover high performing solutions. A promising approach for this is Population Based Training, and I have worked on effecient methods for tuning both <a href="https://arxiv.org/abs/2002.02518" target="_blank" rel="nofollow">continuous</a> and <a href="https://arxiv.org/abs/2106.15883" target="_blank" rel="nofollow">mixed</a> hyperparameters. It may also be effective to adapt exploration strategies (e.g. <a href="https://arxiv.org/abs/2002.02693" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2102.03765" target="_blank" rel="nofollow">here</a>), or curricula over environments. (2) Diversity: optimizing for a single objective may lead to a solution which does not transfer to the real world, so I believe Quality Diversity algorithms will be crucial for gathering rich data to train agents and learning policies with varied behaviors (<a href="https://arxiv.org/abs/2002.00632" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2011.06505?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+arxiv%252FQSXk+%2528ExcitingAds%2521+cs+updates+on+arXiv.org%2529" target="_blank" rel="nofollow">here</a>), and finally (3) World Models. Having access to an accurate model can facilitate generalization, for example by <a href="https://arxiv.org/abs/2104.05632" target="_blank" rel="nofollow">training on randomized dynamics</a>, or learning to reach diverse goals. I am particularly excited by offline MBRL as the amount of data in the world increases, it seems clear to me that one day we will be able to learn large-scale world models that are essentially simulators for a wide variety of tasks.
 
 </br></br>
-Before coming to Oxford I was a VP in the Quantitative Research team at JPM in New York. While in America I studied for a Master's part-time at Columbia where I discovered the joys of machine learning research! I am originally from the UK, and studied Maths at Exeter. 
+I have been incredibly fortunate to spend summers interning at FAIR London with Tim Rocktäschel and Ed Grefenstette and Aspect Capital in the ML group. Before coming to Oxford I was a VP in the Quantitative Research team at JPM in New York. While in America I studied for a Master's part-time at Columbia where I discovered the joys of machine learning research! I am originally from the UK, and studied Maths at Exeter. 
 
 </br></br>
 
@@ -75,10 +75,10 @@ Before coming to Oxford I was a VP in the Quantitative Research team at JPM in N
                         <td>
                             <div class="large-12 columns">
                                 <ul>
-                                <li><b>[8/2021] </b><a href="https://openreview.net/forum?id=skFwlyefkWJ" target="_blank" rel="nofollow">MiniHack</a> is going to be presented at the NeurIPS Datasets and Benchmarks track! 
+                                <li><b>[9/2021] </b> Three papers accepted to NeurIPS 2021! I'm grateful to work with such great people :) 
                                 </li>
                                 </br> 
-                                <li><b>[7/2021]</b> New work on Offline Model Based RL will be presented as a spotlight at the ICML RL for Real Life Workshop. 
+                                <li><b>[8/2021] </b><a href="https://openreview.net/forum?id=skFwlyefkWJ" target="_blank" rel="nofollow">MiniHack</a> is going to be presented at the NeurIPS Datasets and Benchmarks track! 
                                 </li>
                                 </br> 
                                 <li><b>[6/2021]</b> I am interning at Facebook AI Research with Tim Rocktäschel and Ed Grefenstette. 
@@ -116,6 +116,66 @@ Before coming to Oxford I was a VP in the Quantitative Research team at JPM in N
                 <h5>Conference Papers</h5>
             </div>
             <div class="col-sm-10">
+
+
+                <table class="borderless">
+                    <tr>
+                        <td>
+                            <div class="large-1 columns">
+                                    <img src="img/pubs/pb2m.png"  width="100">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="large-12 columns", style="margin: 20px">
+                                <b>Tuning Mixed Input Hyperparameters on the Fly for Efficient Population Based AutoRL </b>  </br> 
+                                 <b>Jack Parker-Holder</b>, Vu Nguyen, Shaan Desai, Stephen Roberts </br> 
+                                <i>Advances in Neural Information Processing Systems (NeurIPS), 2021 </i>  </br>                                  
+                                (<a href="https://arxiv.org/abs/2106.15883" target="_blank" rel="nofollow">ArXiv</a>)
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+
+                </br></br> 
+
+                <table class="borderless">
+                    <tr>
+                        <td>
+                            <div class="large-1 columns">
+                                    <img src="img/pubs/silverstone.png"  width="100">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="large-12 columns", style="margin: 20px">
+                                <b>Replay-Guided Adversarial Environment Design </b>  </br> 
+                                 Minqi Jiang*, Michael Dennis*, <b>Jack Parker-Holder</b>, Jakob Foerster, Edward Grefenstette, Tim Rocktäschel </br> 
+                                <i>Advances in Neural Information Processing Systems (NeurIPS), 2021 </i>  </br>                                  
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+
+                </br></br> 
+
+                <table class="borderless">
+                    <tr>
+                        <td>
+                            <div class="large-1 columns">
+                                    <img src="img/pubs/dope.png"  width="100">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="large-12 columns", style="margin: 20px">
+                                <b>Tactical Optimism and Pessimism for Deep Reinforcement Learning  </b>  </br> 
+                                Ted Moskovitz, <b> Jack Parker-Holder</b>, Aldo Pacchiano, Michael Arbel, Michael I. Jordan </br> 
+                                <i>Advances in Neural Information Processing Systems (NeurIPS), 2021 </i>  </br> 
+                                (<a href="https://arxiv.org/abs/2102.03765" target="_blank" rel="nofollow">ArXiv</a>)
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+
+                </br></br> 
 
 
                 <table class="borderless">
@@ -485,44 +545,6 @@ Before coming to Oxford I was a VP in the Quantitative Research team at JPM in N
                 <h5>Preprints</h5>
             </div>
             <div class="col-sm-10">    
-
-                <table class="borderless">
-                    <tr>
-                        <td>
-                            <div class="large-1 columns">
-                                    <img src="img/pubs/pb2m.png"  width="100">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="large-12 columns", style="margin: 20px">
-                                <b>Tuning Mixed Input Hyperparameters on the Fly for Efficient Population Based AutoRL </b>  </br> 
-                                 <b>Jack Parker-Holder</b>, Vu Nguyen, Shaan Desai, Stephen Roberts </br> 
-                                (<a href="https://arxiv.org/abs/2106.15883" target="_blank" rel="nofollow">ArXiv</a>)
-                            </div>
-                        </td>
-                    </tr>
-                </table> 
-
-                </br></br> 
-
-                <table class="borderless">
-                    <tr>
-                        <td>
-                            <div class="large-1 columns">
-                                    <img src="img/pubs/dope.png"  width="100">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="large-12 columns", style="margin: 20px">
-                                <b>Deep Reinforcement Learning with Dynamic Optimism </b>  </br> 
-                                Ted Moskovitz, <b> Jack Parker-Holder</b>, Aldo Pacchiano, Michael Arbel </br> 
-                                (<a href="https://arxiv.org/abs/2102.03765" target="_blank" rel="nofollow">ArXiv</a>)
-                            </div>
-                        </td>
-                    </tr>
-                </table> 
-
-                </br></br> 
 
                 <table class="borderless">
                     <tr>
