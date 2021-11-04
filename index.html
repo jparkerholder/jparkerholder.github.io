@@ -52,7 +52,7 @@
 I am a third year DPhil student at St Peter's College, Oxford, where I am part of the <a href="http://www.robots.ox.ac.uk/~parg/" target="_blank" rel="nofollow">Machine Learning Research Group</a>, advised by <a href="https://www.robots.ox.ac.uk/~sjrob/" target="_blank" rel="nofollow">Stephen Roberts</a>.
 </br></br>
 
-I am interested in ways use reinforcement learning (RL) to train generally capable agents that can be effective in the real world.I am approaching this from multiple angles: (1) AutoRL. Ideally RL algorithms could automatically discover configurations that outperform human-designed ones.I am working on approaches to adapt agents on the fly, learning both <a href="https://arxiv.org/abs/2002.02518" target="_blank" rel="nofollow">continuous</a> and <a href="https://arxiv.org/abs/2106.15883" target="_blank" rel="nofollow">mixed</a> hyperparameters. It may also be effective to adapt exploration strategies (e.g. <a href="https://arxiv.org/abs/2002.02693" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2102.03765" target="_blank" rel="nofollow">here</a>), or distributions over training environments. (2) Diversity:  optimizing for a single objective may lead to a solution which overfits to the training task, so I believe Quality Diversity algorithms will be crucial for generalization (<a href="https://arxiv.org/abs/2002.00632" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2011.06505?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+arxiv%252FQSXk+%2528ExcitingAds%2521+cs+updates+on+arXiv.org%2529" target="_blank" rel="nofollow">here</a>), and finally (3) World Models. Having access to an accurate model can facilitate generalization, for example by <a href="https://arxiv.org/abs/2104.05632" target="_blank" rel="nofollow">training on randomized dynamics</a>, or learning to reach diverse goals. I am particularly excited by offline MBRL as the amount of data in the world increases, it seems clear to me that one day we will be able to learn large-scale world models that are essentially simulators for a wide variety of tasks.
+I am interested in ways use reinforcement learning (RL) to train generally capable agents that can be effective in the real world. I am approaching this from multiple angles: (1) AutoRL. Ideally RL algorithms could automatically discover configurations that outperform human-designed ones. I am working on approaches to adapt agents on the fly, learning both <a href="https://arxiv.org/abs/2002.02518" target="_blank" rel="nofollow">continuous</a> and <a href="https://arxiv.org/abs/2106.15883" target="_blank" rel="nofollow">mixed</a> hyperparameters. It may also be effective to adapt exploration strategies (e.g. <a href="https://arxiv.org/abs/2002.02693" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2102.03765" target="_blank" rel="nofollow">here</a>), or distributions over training environments. (2) Diversity:  optimizing for a single objective may lead to a solution which overfits to the training task, so I believe Quality Diversity algorithms will be crucial for generalization (<a href="https://arxiv.org/abs/2002.00632" target="_blank" rel="nofollow">here</a> and <a href="https://arxiv.org/abs/2011.06505?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+arxiv%252FQSXk+%2528ExcitingAds%2521+cs+updates+on+arXiv.org%2529" target="_blank" rel="nofollow">here</a>), and finally (3) World Models. Having access to an accurate model can facilitate generalization, for example by <a href="https://arxiv.org/abs/2104.05632" target="_blank" rel="nofollow">training on randomized dynamics</a>, or learning to reach diverse goals. I am particularly excited by offline MBRL as the amount of data in the world increases, it seems clear to me that one day we will be able to learn large-scale world models that are essentially simulators for a wide variety of tasks.
 
 </br></br>
 I have been incredibly fortunate to spend summers interning at FAIR London with Tim Rocktäschel and Ed Grefenstette and Aspect Capital in the ML group. Before coming to Oxford I was a VP in the Quantitative Research team at JPM in New York. While in America I studied for a Master's part-time at Columbia where I discovered the joys of machine learning research! I am originally from the UK, and studied Maths at Exeter. 
@@ -434,6 +434,82 @@ I have been incredibly fortunate to spend summers interning at FAIR London with 
             </div>
             <div class="col-sm-10">    
 
+                <table class="borderless">
+                    <tr>
+                        <td>
+                            <div class="large-1 columns">
+                                    <img src="img/pubs/accel.png"  width="100">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="large-12 columns", style="margin: 20px">
+                                <b>That Escalated Quickly: Compounding Complexity by Editing Levels at the Frontier of Agent Capabilities </b>  </br> 
+                                <b>Jack Parker-Holder</b>, Minqi Jiang, Michael Dennis, Mikayel Samvelyan, Jakob Foerster, Edward Grefenstette, Tim Rocktäschel </br> 
+                                <i>Deep RL Workshop, NeurIPS, 2021 </i> </br>
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+
+                </br></br>  
+
+                <table class="borderless">
+                    <tr>
+                        <td>
+                            <div class="large-1 columns">
+                                    <img src="img/pubs/samplr.png"  width="100">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="large-12 columns", style="margin: 20px">
+                                <b>Grounding Aleatoric Uncertainty in Unsupervised Environment Design </b>  </br> 
+                                Minqi Jiang, Michael Dennis, <b>Jack Parker-Holder</b>, Heinrich Küttler, Edward Grefenstette, Tim Rocktäschel, Jakob Foerster </br> 
+                                <i>Deep RL Workshop, NeurIPS, 2021 </i> </br>
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+
+                </br></br>  
+
+                <table class="borderless">
+                    <tr>
+                        <td>
+                            <div class="large-1 columns">
+                                    <img src="img/pubs/vplr.png"  width="100">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="large-12 columns", style="margin: 20px">
+                                <b>Return Dispersion as an Estimator of Learning Potential for Prioritized Level Replay </b>  </br> 
+                                Iryna Korshunova, Minqi Jiang, <b>Jack Parker-Holder</b>, Tim Rocktäschel, Edward Grefenstette  </br> 
+                                <i>Deep RL Workshop, NeurIPS, 2021 </i> </br>
+                                <i>I (Still) Can’t Believe It’s Not Better Workshop, NeurIPS, 2021 </i> </br>
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+
+                </br></br>  
+
+                <table class="borderless">
+                    <tr>
+                        <td>
+                            <div class="large-1 columns">
+                                    <img src="img/pubs/osa.png"  width="100">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="large-12 columns", style="margin: 20px">
+                                <b>On-the-fly Strategy Adaptation for ad-hoc Agent Coordination  </b>  </br> 
+                                Jaleh Zand, <b> Jack Parker-Holder</b>, Stephen Roberts  </br> 
+                                <i>Cooperative AI Workshop, NeurIPS, 2021 </i> </br>
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+
+                </br></br>  
 
                 <table class="borderless">
                     <tr>
@@ -466,7 +542,7 @@ I have been incredibly fortunate to spend summers interning at FAIR London with 
                             <div class="large-12 columns", style="margin: 20px">
                                 <b>Using Bifurcations for Diversity in Differentiable Games  </b>  </br> 
                                 Jonathan Lorraine, <b> Jack Parker-Holder</b>, Paul Vicol, Aldo Pacchiano, Luke Metz, Tal Kachman, Jakob Foerster  </br> 
-                                <i>Beyond first-order methods in ML systems workshop at ICML, 2021 </i> </br>
+                                <i>Beyond first-order methods in ML systems workshop, ICML, 2021 </i> </br>
                                 (<a href="https://www.cs.toronto.edu/~lorraine/papers/BifurcationsForDiversityPaper.pdf" target="_blank" rel="nofollow">Paper</a>)
                             </div>
                         </td>
